@@ -1,5 +1,6 @@
 import React from "react";
 import "./BusinessCard.css";
+import { chevalDor } from "../../data/BusinessData.js";
 
 export default function BusinessCard() {
   return (
@@ -7,17 +8,17 @@ export default function BusinessCard() {
       <div>
         <img src="../src/assets/pizza.jpeg" alt="Photo de pizza" />
       </div>
-      <h3>Restaurant Cheval D'Or</h3>
+      <h3>{chevalDor._name}</h3>
       <div className="split">
         <div>
-          <p>11 rue Mançay</p>
-          <p>Plailly</p>
-          <p>60128</p>
+          <p>{chevalDor._address}</p>
+          <p>{chevalDor._city}</p>
+          <p>{chevalDor._zipCode}</p>
         </div>
         <div className="text-end">
-          <p>FRANÇAIS</p>
-          <p>4.3 étoiles</p>
-          <p>7 avis</p>
+          <p id="business-category">{chevalDor._category}</p>
+          <p id="business-stars">{chevalDor._rating} étoiles</p>
+          <p>{chevalDor._reviewCount} avis</p>
         </div>
       </div>
     </div>

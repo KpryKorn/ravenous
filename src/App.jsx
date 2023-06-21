@@ -4,7 +4,6 @@ function App() {
   return (
     <>
       <main className="container">
-        <p>Hello World</p>
         <BusinessCard />
       </main>
     </>
