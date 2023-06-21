@@ -1,10 +1,10 @@
-import BusinessCard from "./pages/Home/BusinessCard";
+import BusinessList from "./pages/Home/BusinessList";
 
 function App() {
   return (
     <>
       <main className="container">
-        <BusinessCard />
+        <BusinessList />
       </main>
     </>
   );

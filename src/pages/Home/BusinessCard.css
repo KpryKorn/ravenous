@@ -11,6 +11,8 @@
 }
 .business-card img {
   aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
 }
 .split {
   width: 100%;
