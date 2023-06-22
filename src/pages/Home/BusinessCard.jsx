@@ -1,24 +1,34 @@
 import React from "react";
 import "./BusinessCard.css";
-import { chevalDor } from "../../data/BusinessData.js";
 
-export default function BusinessCard() {
+export default function BusinessCard(props) {
+  const {
+    name,
+    address,
+    city,
+    zipCode,
+    category,
+    rating,
+    reviewCount,
+    imageSrc,
+  } = props;
+
   return (
     <div className="business-card">
       <div>
-        <img src="../src/assets/pizza.jpeg" alt="Photo de pizza" />
+        <img src={imageSrc} alt="Photo de pizza" />
       </div>
-      <h3>{chevalDor._name}</h3>
+      <h3>{name}</h3>
       <div className="split">
         <div>
-          <p>{chevalDor._address}</p>
-          <p>{chevalDor._city}</p>
-          <p>{chevalDor._zipCode}</p>
+          <p>{address}</p>
+          <p>{city}</p>
+          <p>{zipCode}</p>
         </div>
         <div className="text-end">
-          <p id="business-category">{chevalDor._category}</p>
-          <p id="business-stars">{chevalDor._rating} étoiles</p>
-          <p>{chevalDor._reviewCount} avis</p>
+          <p id="business-category">{category}</p>
+          <p id="business-stars">{rating} étoiles</p>
+          <p>{reviewCount} avis</p>
         </div>
       </div>
     </div>
