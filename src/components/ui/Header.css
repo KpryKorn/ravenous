@@ -1,0 +1,13 @@
+nav {
+  padding-block: 1rem;
+  background: rgb(246, 203, 96);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 2rem;
+  text-transform: lowercase;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
