@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroBanner.css";
-import SearchBar from "../../components/form/Searchbar";
+import SearchBar from "../../components/form/SearchBar";
 
 export default function HeroBanner() {
   return (

@@ -5,11 +5,25 @@ input {
   background-color: #fff;
   border: none;
   border-radius: 3px;
-  flex-basis: 100%;
 }
 form {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 2rem;
   align-items: center;
   width: 100%;
+}
+form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+input[type="submit"] {
+  cursor: pointer;
+  background: #f6cb60;
+}
+.basis-100 {
+  flex-basis: 100%;
 }
